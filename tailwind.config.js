@@ -6,13 +6,20 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      backgroundImage: (theme) => ({
+        'morning-bg': ` url('/assets/images/morning.jpg')`,
+        'night-bg': `url('/assets/images/night.jpg')`,
+        'gradient-circle':
+          'linear-gradient(to right,rgb(254, 202, 202),rgb(252, 165, 165),rgb(254, 240, 138));',
+      }),
     },
   },
   plugins: [],
-}
+};

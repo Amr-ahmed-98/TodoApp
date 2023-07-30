@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.morning-gradient {
+  background: linear-gradient(to top, rgb(251, 113, 133), rgb(253, 186, 116));
+}
+.night-gradient {
+  background: linear-gradient(
+    to right,
+    rgb(29, 78, 216),
+    rgb(30, 64, 175),
+    rgb(17, 24, 39)
+  );
+}
+.head-text {
+  @apply top-28 absolute font-bold text-stone-500 text-2xl;
+}
+.headNight-text {
+  @apply top-28 absolute font-bold text-white text-2xl;
+}
+
+.wid-form {
+  width: 35rem;
+}
+
+.container-form {
+  width: 35rem;
+  height: 25rem;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+input::placeholder {
+  @apply text-white;
+}
+input::-webkit-input-placeholder {
+  @apply text-white;
+}
+input::-moz-placeholder {
+  @apply text-white;
+}
+input:-ms-input-placeholder {
+  @apply text-white;
+}
