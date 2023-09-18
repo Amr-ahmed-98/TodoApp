@@ -20,7 +20,7 @@ export const getTodos = async () => {
 
 export const addTodos = async (id, TodoData) => {
   const response = await fetch(
-    `https://todo-5c806-default-rtdb.firebaseio.com/todos/${id}.json`,
+    `https://todo-app-5e92a-default-rtdb.firebaseio.com/todos/${id}.json`,
     {
       method: 'PUT',
       headers: {
