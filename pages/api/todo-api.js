@@ -1,4 +1,4 @@
-const todoApi = 'https://todo-app-5e92a-default-rtdb.firebaseio.com/';
+const todoApi = 'https://todo-app-5e92a-default-rtdb.firebaseio.com';
 export const getTodos = async () => {
   const response = await fetch(todoApi);
   const responseData = await response.json();
