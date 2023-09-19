@@ -1,7 +1,7 @@
 const todoApi = 'https://todo-app-5e92a-default-rtdb.firebaseio.com';
 export const getTodos = async () => {
   const response = await fetch(
-    `https://todo-app-5e92a-default-rtdb.firebaseio.com/todos/${id}.json`
+    `https://todo-app-5e92a-default-rtdb.firebaseio.com/todos.json`
   );
   const responseData = await response.json();
   if (!response.ok)
