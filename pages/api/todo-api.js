@@ -39,7 +39,7 @@ export const addTodos = async (id, TodoData) => {
 
 export const deleteTodo = async (id) => {
   const response = await fetch(
-    `https://todo-5c806-default-rtdb.firebaseio.com/todos/${id}.json`,
+    `https://todo-app-5e92a-default-rtdb.firebaseio.com/todos/${id}.json`,
     {
       method: 'DELETE',
       headers: {
@@ -54,7 +54,7 @@ export const clearCompletedTodos = async (todos) => {
   const completedTodos = todos.filter((todo) => !todo.active);
   for (const todo of completedTodos) {
     const response = await fetch(
-      `https://todo-5c806-default-rtdb.firebaseio.com/todos/${todo.id}.json`,
+      `https://todo-app-5e92a-default-rtdb.firebaseio.com/todos/${todo.id}.json`,
       {
         method: 'DELETE',
       }
