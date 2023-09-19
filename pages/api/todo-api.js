@@ -1,6 +1,6 @@
 const todoApi = 'https://todo-app-5e92a-default-rtdb.firebaseio.com';
 export const getTodos = async () => {
-  const response = await fetch(todoApi);
+  const response = await fetch(`{todoApi}/todos.json`);
   const responseData = await response.json();
   if (!response.ok)
     throw new Error(
